@@ -1,11 +1,14 @@
 import './App.css';
+import NavBar from './components/partials/NavBar';
 import Users from './components/users/Users';
 
 function App() {
   return (
     <div className="App">
-    <h1>Welcome to My React App</h1>
-    <Users/>
+       <NavBar/> 
+      <div className="container mt-2">
+        <Users/>
+    </div>
     </div>
   );
 }
