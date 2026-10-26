@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class SearchUsers extends Component {
 
   state = {
-    search:"Ayoub "
+    search:""
   }
 
   handleForm = (e) => {
@@ -14,6 +14,7 @@ export class SearchUsers extends Component {
 
   serchUsers = (e) => {
     e.preventDefault();
+    this.props.getUserSearch(this.state.search);
     
   }
   render() {
